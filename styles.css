@@ -1,0 +1,98 @@
+header {
+    margin: 40px 0 40px 30px;
+   
+}
+
+h1{
+    font-size: 70px;
+}
+.tableHead {
+    margin: 30px 0;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 5px 24px;
+}
+
+main {
+    height: 100%;
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+main div {
+    display: flex;
+    position: relative;
+    background: yellow;
+    border: 1px solid grey;
+    height: 300px;
+    width: 35%;
+    margin: 0 35px 35px 0;
+    
+}
+.image, .desc {
+    height: 279px;
+    width: 45%;
+    margin: 10px;
+}
+.desc {
+    box-sizing: border-box;
+    padding: 10px;
+    flex-direction: column;  
+}
+
+.name {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.price {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.rest {
+    margin-bottom: 40px;
+    
+}
+
+.overlay {
+	background: #000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+    opacity: .5;
+    }
+.visible {
+	background: #fff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -200px;
+	overflow: hidden;
+	z-index: 2000;
+	width: 500px;
+	padding: 0px;
+    margin-left: -250px;
+    text-align: center;
+}
+
+.content {
+	padding: 0 1em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+    background: WhiteSmoke;
+}
+    
+.visible h1{
+    font-size: 40px;
+}
+
+.img {
+    width: 100%;
+}

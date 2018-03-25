@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="ico.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Скачайте приложение</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="logo"><a href="http://yandex.ru"><img src="https://i1kk.github.io/logo.PNG"></a>
-        </div>
-        <div class="tarif"><a href="#">Тарифы</a></div>
-        <div class="mobileApp"><a href="#">Мобильное приложение</a></div>
-        <div class="support"><a href="https://yandex.ru/support/taxi/">Служба поддержки</a></div>
-        <div class="join"><a href="#">Работа с нами</a></div>
-    </header>
-    <main>
-        <div class="alwaysClose">
-            <div class="leftClose">
-            <h1>Всегда<br>рядом</h1>
-            <p class="leftClose">Приложение Яндекс.Такси поможет вам добраться до места<br>быстро и недорого: прямо сейчас, днём и ночью, для всей семьи,<br>картой и наличными. Вызывайте как нравится!</p>
-            </div>
-            <div class="rightClose"></div>
-            <video class="getTaxi" autoplay contrlos loop poster src="https://download.cdn.yandex.net/taxi/taxi-frontend/app/CITI.mp4"></video>
-        </div>
-        <div class="accuracy">
-            <h2>Математическая точность</h2>
-            <div class="pictures"></div>
-                <table>
+    <div id="win" style = display:none>
+   <div class="overlay"></div>
+      <div class="visible">
+        <h1>Заказ товара</h1>
+          <div class="content">
+                <form action="index.html" method="GET">
+                    <table>
+                        <tr>
+                            
+                            <td><input type="text" placeholder="Ваше имя"></td>
+                        </tr>
                     <tr>
-                <td><img width="300px" src="https://avatars.mds.yandex.net/get-bunker/60661/475e7a2ede86b1a011549f04940d85b3d4a51b4b/orig"></td>
-                <td><img width="300px" src="https:////avatars.mds.yandex.net/get-bunker/135516/d85638c4a6915fcc8d06e1a981930b6b15613a7f/orig"></td>
-                <td><img width="300px" src="https:////avatars.mds.yandex.net/get-bunker/135516/b2bca207db512ffdd4596463ba4d7bd658c00a56/orig"></td>
+                        <td><input type="email" placeholder="Ваш e-mail"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Ваш телефон"></td>
                     </tr>
                     <tr>
                         <td>
-                            Знает ваш город и строит<br>оптимальные маршруты
-                        </td>
-                        <td>Находит машину, которая<br>приедет к вам быстрее всего</td>
-                        <td>Показывает ближайшую<br>точку, откуда поездка будет<br>дешевле</td>
-                    </tr>    
-                </table>
-        </div> 
+                            <input type="text" placeholder="Количество">
+                            <select name="number" id="123">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select></td>
+                    </tr>
+                    </table>
+                </form>
+                
+                    
+          </div>
+        <button type="button" onClick="getElementById('win').style.display='none';">закрыть</button>
+    </div>
+</div>
+    <header>
+        <h1>Интернет-магазин</h1>
+        <table class="tableHead">
+        <tr>
+            <td><a href="#">Каталог</a></td>
+            <td><a href="zakaz.html">Заказы</a></td>
 
+        </tr>
+    </table>
+    </header>
+    <main>
+        <div>
+            <div class="image"><img class="img" src="https://www.decathlon.ru/media/818/8186331/big_8ce8e88b-a349-4bb5-a899-022fc475c877.jpg" alt=""></div>
+            <div class="desc">
+                <p class="name">Куртка</p>
+                <p class="price">Цена</p>
+                <p class="rest">Остаток на складе</p>
+                <button onClick="getElementById('win').removeAttribute('style');" type="button">Купить</button>
+            </div>
+        </div>
+        <div>item2</div>
+        <div>item3</div>
     </main>
-    <footer>
-        <div><a href="https://yandex.ru/legal/taxi_termsofuse/">Пользовательское соглашение</a></div>
-        <div>© 2009–2018  ООО «Яндекс.Такси»</div>
-
-    </footer>
-
 </body>
 </html>
