@@ -15,15 +15,17 @@ h1{
 td {
     border: 1px solid grey;
     padding: 5px 24px;
-}
+    }
 
 main {
     height: 100%;
     margin: 0 30px;
     display: flex;
     flex-wrap: wrap;
-    
-    }
+     }
+main td {
+    width: 200%;
+}     
 main div {
     display: flex;
     position: relative;
@@ -95,4 +97,7 @@ main div {
 
 .img {
     width: 100%;
+}
+option {
+    width: 150px;
 }
